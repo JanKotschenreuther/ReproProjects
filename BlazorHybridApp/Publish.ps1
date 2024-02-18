@@ -1,5 +1,5 @@
-﻿dotnet publish .\adv-dbupdater-ui.csproj `
-    -o C:\Publish\adv-dbupdater-ui `
+﻿dotnet publish .\BlazorHybridApp.csproj `
+    -o C:\Publish\BlazorHybridApp `
     -c Release `
     -f net8.0-windows10.0.19041.0 `
     -p:WindowsAppSDKSelfContained=true `
