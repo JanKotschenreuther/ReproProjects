@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:blazor="clr-namespace:Microsoft.AspNetCore.Components.WebView.Wpf;assembly=Microsoft.AspNetCore.Components.WebView.Wpf"
+        xmlns:components="clr-namespace:WpfBlazorHybridApp.Components"
         xmlns:pages="clr-namespace:WpfBlazorHybridApp.Components.Pages"
         xmlns:local="clr-namespace:WpfBlazorHybridApp"
         mc:Ignorable="d"
@@ -11,7 +12,7 @@
     <Grid>
         <blazor:BlazorWebView HostPage="wwwroot\index.html" Services="{DynamicResource services}">
             <blazor:BlazorWebView.RootComponents>
-                <blazor:RootComponent Selector="#app" ComponentType="{x:Type pages:Counter}" />
+                <blazor:RootComponent Selector="#app" ComponentType="{x:Type components:Routes}" />
             </blazor:BlazorWebView.RootComponents>
         </blazor:BlazorWebView>
     </Grid>

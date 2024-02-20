@@ -9,6 +9,8 @@ namespace WpfBlazorHybridApp;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private readonly IHost _host;
+
     public MainWindow()
     {
         InitializeComponent();
@@ -22,8 +24,8 @@ public partial class MainWindow : Window
         builder.Logging.AddDebug();
 #endif
 
-        var host = builder.Build();
+        _host = builder.Build();
 
-        Resources.Add("services", host.Services);
+        Resources.Add("services", _host.Services);
     }
 }
